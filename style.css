@@ -78,6 +78,47 @@ a{
     width: 100%;
 }
 
+/* Service Card */
+.service-grid-item{
+    grid-column: auto / span 3;
+    text-align: center;
+}
+
+.service-card-title{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.service-card-content{
+    color: #888;
+}
+
+/* Feature section */
+.feature-grid-custom{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'A B' 
+    'A C ';
+}
+
+.feature-grid-custom > section{
+    padding: 3rem;
+}
+
+.feature-A{
+    grid-area: A;
+    display: flex;
+    align-items: center;
+}
+
+.feature-B{
+    grid-area: B;
+}
+
+.feature-C{
+    grid-area: C;
+}
 /* Utility Class */
 .flex{
     display: flex;
