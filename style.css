@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    --color-primary: #B00000;
 }
 
 body{
@@ -14,12 +15,50 @@ a{
     text-decoration: none;
 }
 
+.btn-primary{
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+
+}
+
+.btn-secondary{
+    border: none;
+    background-color: white;
+    border-radius: 0.5rem;
+    outline: 1px solid black;
+    padding: 0.75rem 1rem;
+
+}
+
 /* Nav Item Related */
+
 .nav-item-padding{
     padding: 0 30px;
     font-weight: 600;
 }
 
+/* Hero Related */
+
+.hero-title{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.25;
+}
+
+.hero-text{
+    color: #888;
+}
+
+/* Hero Left segment */
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 1.5rem;
+}
 
 /* Utility Class */
 .flex{
@@ -42,3 +81,7 @@ a{
     border: 1px solid red;
 }
 
+.section-margin{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
