@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    --color-primary: #B00000;
+}
+
+body{
+    margin: 0 4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+
+}
+
+.btn-secondary{
+    border: none;
+    background-color: white;
+    border-radius: 0.5rem;
+    outline: 1px solid black;
+    padding: 0.75rem 1rem;
+
+}
+
+.banner-primary-button{
+    margin-right: 20px;
+}
+
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 40px;
+}
+
+.banner-left-title{
+    font-size: 64px;
+    line-height: 1.15;
+}
+
+.banner-left-text{
+    color: #888;
+}
+
+/* Hosting Icon Section */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.hosting-icon-grid-item{
+    grid-column: auto / span 4;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.hosting-icon-grid{
+    grid-gap: 40px;
+}
+
+.section-margin{
+    margin: 50px 0;
+}
+
+/* Feature Section */
+
+.feature-grid{
+    display: grid;
+    grid-template-areas: 
+    'A B'
+    'A C'
+    ;
+}
+.feature-A{
+    grid-area: A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-B{
+    grid-area: B;
+}
+
+.feature-C{
+    grid-area: C;
+}

@@ -1,0 +1,16 @@
+.first-title{
+    color: green;
+}
+
+.grid{
+    display: grid;
+    /* grid-template-columns: repeat(3, 40px); */
+    grid-template-columns: repeat(12, 1fr); 
+}
+
+.grid-item{
+    grid-column: span 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
